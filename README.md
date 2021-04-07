@@ -1,6 +1,7 @@
 # 將剪映生成的簡體字幕轉成正體中文
 
 **剪映影片檔路徑 (Mac):** <家目錄>/Movies/JianyingPro/videocut/<影片 ID>
+
 **影片縮圖:** <家目錄>/Movies/JianyingPro/videocut/<影片 ID>/cover.png
 
 ### 使用說明:
