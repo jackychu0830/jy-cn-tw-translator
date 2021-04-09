@@ -21,8 +21,9 @@
 4. 執行 python3 src/JyCnTwTranslatorApp.py
 
 #### Mac 桌面版
-1. 下載 dist 目錄下的 [JyCnTwTranslatorApp](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorApp) 檔案
-2. 雙擊 JyCnTwTranslatorApp
+1. 下載 dist 目錄下的 [JyCnTwTranslatorApp.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorApp.zip) 檔案
+2. 解壓縮 JyCnTwTranslatorApp.zip
+3. 雙擊 JyCnTwTranslatorApp
 
 
 特別感謝： https://github.com/yinbaiyuan/JYToSRT 提供 SRT 導出程式
