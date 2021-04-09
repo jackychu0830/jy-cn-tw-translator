@@ -11,6 +11,7 @@
 
 **影片縮圖:** <家目錄>/Movies/JianyingPro/videocut/<影片 ID>/cover.png
 
+
 ### 使用說明
 
 #### 硬派工程師適用 (不限作業系統 Mac, Win 皆可):
@@ -20,7 +21,7 @@
 4. 執行 python3 src/JyCnTwTranslatorApp.py
 
 #### Mac 桌面版
-1. 下載 dist 目錄下的 JyCnTwTranslatorApp 檔案
+1. 下載 dist 目錄下的 [JyCnTwTranslatorApp](https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/dist/JyCnTwTranslatorApp) 檔案
 2. 雙擊 JyCnTwTranslatorApp
 
 
