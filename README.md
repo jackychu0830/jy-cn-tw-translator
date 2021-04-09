@@ -26,4 +26,9 @@
 3. 雙擊 JyCnTwTranslatorApp
 
 
-特別感謝： https://github.com/yinbaiyuan/JYToSRT 提供 SRT 導出程式
+### 個人 Youtube 頻道
+- **愈來愈美** https://www.youtube.com/channel/UCWgM7nye_t33GbY8FJlFCpw
+- **RV Let's Go** https://www.youtube.com/channel/UC1aBeZLOIE_-1kULlVPwDEQ
+
+
+=== 特別感謝： https://github.com/yinbaiyuan/JYToSRT 提供 SRT 導出程式 ===
