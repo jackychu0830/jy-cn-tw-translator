@@ -6,9 +6,9 @@ from pygoogletranslation import Translator
 JY_PATH = os.path.expanduser('~') + '/Movies/JianyingPro/videocut/'
 
 
-def get_subtitle_text(filename):
+def get_video_texts(filename):
     """
-    Get all subtitle text from file
+    Get all text content from video
     :param filename: file name
     :return: all subtitle in list format
     """
@@ -24,9 +24,9 @@ def get_subtitle_text(filename):
     return texts
 
 
-def set_subtitle_text(new_texts, filename):
+def set_video_texts(new_texts, filename):
     """
-    Write translated subtitle back to JT file
+    Write translated texts back to video
 
     :param new_texts: Translated texts
     :param filename: file name
@@ -43,19 +43,29 @@ def set_subtitle_text(new_texts, filename):
         json.dump(json_obj, json_file, ensure_ascii=False)
 
 
-def main():
+def do_translate(cn_texts):
+    """
+    Do translate from CN to TW
+    
+    :param cn_texts: Texts in CN
+    :return: Texts in TW
+    """
+    translator = Translator()
+    result = translator.translate(cn_texts, src='zh-cn', dest='zh-tw')
+    tw_texts = [r.text for r in result]
 
+    return tw_texts
+
+
+def main():
     jy_video = input('Please input video id: ')
     filename = JY_PATH + jy_video + '/template.json'
-    cn_text = get_subtitle_text(filename)
-    print(cn_text)
+    cn_texts = get_video_texts(filename)
+    print(cn_texts)
 
-    translator = Translator()
-    result = translator.translate(cn_text, src='zh-cn', dest='zh-tw')
-    tw_text = [r.text for r in result]
-    print(tw_text)
-
-    set_subtitle_text(tw_text, filename)
+    tw_texts = do_translate(cn_texts)
+    print(tw_texts)
+    set_video_texts(tw_texts, filename)
 
 
 if __name__=="__main__":
