@@ -1,4 +1,6 @@
 # 將剪映生成的簡體字幕轉成正體中文
+<img src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/icon.png" width="200"/>
+<img src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/screenshot.png" width="640"/>
 
 ### 三大功能：
 1. 影片所有字幕簡體轉正體
