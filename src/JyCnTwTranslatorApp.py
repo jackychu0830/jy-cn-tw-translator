@@ -104,7 +104,7 @@ class App(Frame):
         """
         Translate selected video's texts from CN to TW
         """
-        index = int(self.tree.focus()[1:]) - 1
+        index = self.tree.index(self.tree.focus())
         texts = self.video_texts_list[index]
         try:
             tw_texts = do_translate(texts)
@@ -119,7 +119,7 @@ class App(Frame):
         """
         Export selected video's subtitle to SRT file
         """
-        index = int(self.tree.focus()[1:]) - 1
+        index = self.tree.index(self.tree.focus())
         filename = simpledialog.askstring("File name", "What is SRT file name?", parent=self)
 
         f = open(self.video_path_list[index] + '/template.json')
@@ -140,7 +140,7 @@ class App(Frame):
         """
         Replace selected video cover image
         """
-        index = int(self.tree.focus()[1:]) - 1
+        index = self.tree.index(self.tree.focus())
         png_file = filedialog.askopenfilename(parent=self,
                                               initialdir=os.getcwd(),
                                               title="Please select a PNG file:",
