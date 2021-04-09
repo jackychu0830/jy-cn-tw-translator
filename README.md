@@ -21,3 +21,6 @@
 #### Mac 桌面版
 1. 下載 dist 目錄下的 JyCnTwTranslatorApp 檔案
 2. 雙擊 JyCnTwTranslatorApp
+
+
+特別感謝： https://github.com/yinbaiyuan/JYToSRT 提供 SRT 導出程式
