@@ -13,6 +13,7 @@
 
 
 ### 使用說明
+影片說明請看 https://youtu.be/h8ZE3egxLv8
 
 #### 硬派工程師適用 (不限作業系統 Mac, Win 皆可):
 1. 下載本專案 (Download 或是 Clone)
