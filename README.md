@@ -9,7 +9,11 @@
 
 **剪映影片檔路徑 (Mac):** <家目錄>/Movies/JianyingPro/videocut/<影片 ID>
 
-**影片縮圖:** <家目錄>/Movies/JianyingPro/videocut/<影片 ID>/cover.png
+**剪映影片檔路徑 (Windows):** <家目錄>\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft\<影片 ID>
+
+**影片縮圖 (Mac):** <家目錄>/Movies/JianyingPro/videocut/<影片 ID>/cover.png
+
+**影片縮圖 (Windows):** <家目錄>\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft\<影片 ID>\cover.png
 
 
 ### 使用說明
@@ -19,13 +23,18 @@
 1. 下載本專案 (Download 或是 Clone)
 2. 安裝 python3 及 pip
 3. 執行 pip install -r requirements.txt
-4. 執行 python3 src/JyCnTwTranslatorApp.py
+4. Mac 執行 python3 src/JyCnTwTranslatorApp.py
+5. Windows 執行 py src/JyCnTwTranslatorWinApp.py
 
 #### Mac 桌面版
 1. 下載 dist 目錄下的 [JyCnTwTranslatorApp.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorApp.zip) 檔案
 2. 解壓縮 JyCnTwTranslatorApp.zip
-3. 雙擊 JyCnTwTranslatorApp
+3. 雙擊執行 JyCnTwTranslatorApp
 
+### Windows 桌面版
+1. 下載 dist 目錄下的 [JyCnTwTranslatorWinApp.exe.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorWinApp.exe.zip) 檔案
+2. 解壓縮 JyCnTwTranslatorWinApp.exe.zip
+3. 雙擊執行 JyCnTwTranslatorWinApp.exe
 
 ### 個人 Youtube 頻道
 - **愈來愈美** https://www.youtube.com/channel/UCWgM7nye_t33GbY8FJlFCpw
