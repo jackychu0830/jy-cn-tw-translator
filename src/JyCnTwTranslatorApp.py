@@ -19,7 +19,7 @@ def get_video_list():
     Get Jianying video list
     :return: The list of all video path
     """
-    result = [folder for folder in glob.glob(os.path.join(JY_PATH, '*'))]
+    result = [folder for folder in glob.glob(os.path.join(JY_PATH, '*/'))]
     return result
 
 
@@ -122,14 +122,14 @@ class App(Frame):
         index = self.tree.index(self.tree.focus())
         filename = simpledialog.askstring("File name", "What is SRT file name?", parent=self)
 
-        f = open(self.video_path_list[index] + '/template.json')
+        f = open(self.video_path_list[index] + '/template.json', encoding='utf-8')
         txt = f.read()
         f.close()
 
         subtitle_txt = analyseFile(txt)
         subtitle_srt = createSrt(subtitle_txt)
 
-        f = open(os.path.expanduser('~') + '/Desktop/' + filename + '.srt', "w")
+        f = open(os.path.expanduser('~') + '/Desktop/' + filename + '.srt', "w", encoding='utf-8')
         f.write(subtitle_srt)
         f.close()
 

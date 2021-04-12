@@ -12,7 +12,7 @@ def get_video_texts(filename):
     :param filename: file name
     :return: all subtitle in list format
     """
-    f = open(filename)
+    f = open(filename, encoding='utf-8')
     txt = f.read()
     f.close()
 
@@ -31,7 +31,7 @@ def set_video_texts(new_texts, filename):
     :param new_texts: Translated texts
     :param filename: file name
     """
-    f = open(filename)
+    f = open(filename, encoding='utf-8')
     txt = f.read()
     f.close()
     json_obj = json.loads(txt)
