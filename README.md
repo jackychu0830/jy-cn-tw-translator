@@ -31,15 +31,10 @@
 2. 解壓縮 JyCnTwTranslatorApp.zip
 3. 雙擊執行 JyCnTwTranslatorApp
 
-### Windows 10 32位元 桌面版
-1. 32 位元的 Windows，請下載 dist 目錄下的 [JyCnTwTranslatorWinApp_32.exe.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorWinApp_32.exe.zip) 檔案
-2. 解壓縮 JyCnTwTranslatorWinApp_32.exe.zip
-3. 雙擊執行 JyCnTwTranslatorWinApp_32.exe
-
-### Windows 10 64位元 桌面版
-1. 64 位元的 Windows，請下載 dist 目錄下的 [JyCnTwTranslatorWinApp_64.exe.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorWinApp_64.exe.zip) 檔案
-2. 解壓縮 JyCnTwTranslatorWinApp_64.exe.zip
-3. 雙擊執行 JyCnTwTranslatorWinApp_64.exe
+### Windows 10 桌面版
+1. 下載 dist 目錄下的 [JyCnTwTranslatorWinApp.exe.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorWinApp.exe.zip) 檔案
+2. 解壓縮 JyCnTwTranslatorWinApp.exe.zip
+3. 雙擊執行 JyCnTwTranslatorWinApp.exe
 
 ### 個人 Youtube 頻道
 - **愈來愈美** https://www.youtube.com/channel/UCWgM7nye_t33GbY8FJlFCpw

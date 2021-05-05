@@ -20,7 +20,12 @@ def get_video_list():
     :return: The list of all video path
     """
     result = [folder for folder in glob.glob(os.path.join(JY_PATH, '*/'))]
-    return result
+    new_list = []
+    for path in result:
+        if os.path.exists(path + '\\template.json'):
+            new_list.append(path)
+
+    return new_list
 
 
 class App(Frame):
