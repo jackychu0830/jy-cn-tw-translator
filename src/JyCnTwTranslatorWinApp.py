@@ -16,15 +16,15 @@ JY_PATH = os.path.expanduser('~') + '\\AppData\\Local\\JianyingPro\\User Data\\P
 
 def get_video_list():
     """
-    Get Jianying video list
+    Get Jianying video list. The video must has draft.json file.
     :return: The list of all video path
     """
     result = [folder for folder in glob.glob(os.path.join(JY_PATH, '*/'))]
     new_list = []
     for path in result:
-        if os.path.exists(path + '\\template.json'):
+        if os.path.exists(path + '\\draft.json'):
             new_list.append(path)
-
+            
     return new_list
 
 
@@ -70,10 +70,10 @@ class App(Frame):
         self.video_path_list = get_video_list()
         self.video_texts_list = []
         for path in self.video_path_list:
-            self.video_texts_list.append(get_video_texts(path + '\\template.json'))
+            self.video_texts_list.append(get_video_texts(path + '\\draft.json'))
 
         self.video_images = []
-        images = [Image.open(path + '\\cover.png') for path in self.video_path_list]
+        images = [Image.open(path + '\\draft_cover.jpg') for path in self.video_path_list]
         for img in images:
             img = img.resize((160, 90), Image.ANTIALIAS)
             self.video_images.append(ImageTk.PhotoImage(img))
@@ -113,7 +113,7 @@ class App(Frame):
         texts = self.video_texts_list[index]
         try:
             tw_texts = do_translate(texts)
-            set_video_texts(tw_texts, self.video_path_list[index] + '\\template.json')
+            set_video_texts(tw_texts, self.video_path_list[index] + '\\draft.json')
 
             messagebox.showinfo(title='Success', message='Translate success!')
             self.refresh_treeview()
@@ -127,7 +127,7 @@ class App(Frame):
         index = self.tree.index(self.tree.focus())
         filename = simpledialog.askstring("File name", "What is SRT file name?", parent=self)
 
-        f = open(self.video_path_list[index] + '\\template.json', encoding='utf-8')
+        f = open(self.video_path_list[index] + '\\draft.json', encoding='utf-8')
         txt = f.read()
         f.close()
 
@@ -149,8 +149,8 @@ class App(Frame):
         png_file = filedialog.askopenfilename(parent=self,
                                               initialdir=os.getcwd(),
                                               title="Please select a PNG file:",
-                                              filetypes=[('PNG', ".png")])
-        shutil.copy(png_file, self.video_path_list[index] + '\\cover.png')
+                                              filetypes=[('JPEG', ".jpg")])
+        shutil.copy(png_file, self.video_path_list[index] + '\\draft_cover.jpg')
 
         messagebox.showinfo(title='Replace', message='Replace cover image success!')
         self.refresh_treeview()
