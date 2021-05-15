@@ -1,4 +1,6 @@
 # 將剪映生成的簡體字幕轉成正體中文
+# 適用於簡映 1.2.x 版本
+
 <img alt="icon" src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/icon.png" width="200"/>
 <img alt="screenshot" src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/screenshot.png" width="640"/>
 
