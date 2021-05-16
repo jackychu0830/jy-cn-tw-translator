@@ -1,4 +1,6 @@
 # 將剪映生成的簡體字幕轉成正體中文
+# 適用於剪映 Mac 1.2.8 版 
+## Mac 1.2.4 版請至 [這裡](https://github.com/jackychu0830/jy-cn-tw-translator/tree/1.2.4) 下載
 <img alt="icon" src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/icon.png" width="200"/>
 <img alt="screenshot" src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/screenshot.png" width="640"/>
 
@@ -7,13 +9,9 @@
 2. 導出字幕 SRT 檔
 3. 置換在剪映軟體下的影片縮圖
 
-**剪映影片檔路徑 (Mac):** <家目錄>/Movies/JianyingPro/videocut/<影片 ID>
+**剪映影片檔路徑 (Mac):** <家目錄>/Movies/JianyingPro/User Data/Projects/com.lveditor.draft/<影片 ID>
 
 **剪映影片檔路徑 (Windows):** <家目錄>\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft\<影片 ID>
-
-**影片縮圖 (Mac):** <家目錄>/Movies/JianyingPro/videocut/<影片 ID>/cover.png
-
-**影片縮圖 (Windows):** <家目錄>\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft\<影片 ID>\cover.png
 
 
 ### 使用說明
@@ -24,7 +22,7 @@
 2. 安裝 python3 及 pip
 3. 執行 pip install -r requirements.txt
 4. Mac 執行 python3 src/JyCnTwTranslatorApp.py
-5. Windows 執行 py src/JyCnTwTranslatorWinApp.py
+5. Windows 執行 py src/JyCnTwTranslatorApp.py
 
 #### Mac 桌面版
 1. 下載 dist 目錄下的 [JyCnTwTranslatorApp.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorApp.zip) 檔案

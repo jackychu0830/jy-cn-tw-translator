@@ -24,6 +24,22 @@ def get_video_texts(filename):
     return texts
 
 
+def get_video_names(filename):
+    """
+    Get all text content from video
+    :param filename: file name
+    :return: video name
+    """
+    f = open(filename, encoding='utf-8')
+    txt = f.read()
+    f.close()
+
+    json_obj = json.loads(txt)
+    name = json_obj.get('draft_name')
+
+    return name
+
+
 def set_video_texts(new_texts, filename):
     """
     Write translated texts back to video
@@ -55,6 +71,20 @@ def do_translate(cn_texts):
     tw_texts = [r.text for r in result]
 
     return tw_texts
+
+
+def do_single_translate(cn_text):
+    """
+    Do single text translate from CN to TW
+
+    :param cn_text: Text in CN
+    :return: Text in TW
+    """
+    translator = Translator()
+    result = translator.translate(cn_text, src='zh-cn', dest='zh-tw')
+    text = result.text
+
+    return text
 
 
 def main():
