@@ -1,5 +1,5 @@
 # 將剪映生成的簡體字幕轉成正體中文
-# 適用於剪映 1.2.x 版本
+# 適用於剪映 Mac 1.2.4 版本
 
 <img alt="icon" src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/icon.png" width="200"/>
 <img alt="screenshot" src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/screenshot.png" width="640"/>
@@ -29,12 +29,13 @@
 5. Windows 執行 py src/JyCnTwTranslatorWinApp.py
 
 #### Mac 桌面版
-1. 下載 dist 目錄下的 [JyCnTwTranslatorApp.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorApp.zip) 檔案
+1. 下載 dist 目錄下的 [JyCnTwTranslatorApp.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/1.2.4/dist/JyCnTwTranslatorApp.zip
+) 檔案
 2. 解壓縮 JyCnTwTranslatorApp.zip
 3. 雙擊執行 JyCnTwTranslatorApp
 
 ### Windows 10 桌面版
-1. 下載 dist 目錄下的 [JyCnTwTranslatorWinApp.exe.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorWinApp.exe.zip) 檔案
+1. 下載 dist 目錄下的 [JyCnTwTranslatorWinApp.exe.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/1.2.4/dist/JyCnTwTranslatorWinApp.exe.zip) 檔案
 2. 解壓縮 JyCnTwTranslatorWinApp.exe.zip
 3. 雙擊執行 JyCnTwTranslatorWinApp.exe
 
