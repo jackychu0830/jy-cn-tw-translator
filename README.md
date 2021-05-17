@@ -1,5 +1,5 @@
 # 將剪映生成的簡體字幕轉成正體中文
-# 適用於剪映 Mac 1.2.4 版本
+# 適用於剪映 Mac 1.2.4 版本, Windows 1.2.1 版本
 
 <img alt="icon" src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/icon.png" width="200"/>
 <img alt="screenshot" src="https://github.com/jackychu0830/jy-cn-tw-translator/blob/main/screenshot.png" width="640"/>
