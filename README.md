@@ -30,7 +30,7 @@
 3. 雙擊執行 JyCnTwTranslatorApp
 
 ### Windows 10 桌面版
-1. 下載 dist 目錄下的 [JyCnTwTranslatorWinApp.exe.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorWinApp.zip) 檔案
+1. 下載 dist 目錄下的 [JyCnTwTranslatorWinApp.zip](https://github.com/jackychu0830/jy-cn-tw-translator/raw/main/dist/JyCnTwTranslatorWinApp.zip) 檔案
 2. 解壓縮 JyCnTwTranslatorWinApp.exe.zip
 3. 雙擊執行 JyCnTwTranslatorWinApp.exe
 
