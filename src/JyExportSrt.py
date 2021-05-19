@@ -27,10 +27,10 @@ def analyseFile(jsonStr=''):
 
 def msToTimeStr(t=0):
     res = ''
-    ms = t % 1000
-    sec = t // 1000 % 60
-    min = t // 1000 // 60 % 60
-    hour = t // 1000 // 60 // 60
+    ms = t // 1000 % 1000
+    sec = t // 1000 // 1000 % 60
+    min = t // 1000 // 1000 // 60 % 60
+    hour = t // 1000 // 1000 // 60 // 60
     res += "%02d" % hour + ':' + "%02d" % min + ':' + "%02d" % sec + ',' + "%03d" % ms
     return res
 
